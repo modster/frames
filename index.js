@@ -1,12 +1,13 @@
 import 'dotenv/config'
 import { NeynarAPIClient } from "@neynar/nodejs-sdk";
 
-const id = "only_you_see_this" // <-------------------- replace this with your title
-const imageUrl = "" // <-------------------- replace this with your image URL
+const id = "only_you_see_this" // <-------- replace this with your title
+const imageUrl = "" // <------------------- replace this with your image URL
 const mintUrl = "" // <-------------------- replace this with your mint URL
-const  title = "The Frame Title" // <-------------------- replace this with your title
+const title = "The Frame Title" // <------- replace this with your title
 
 const main = async () => {
+
   const neynarClient = new NeynarAPIClient(
     `${process.env.NEYNAR_API_KEY}`
   );
@@ -37,7 +38,7 @@ const main = async () => {
             enabled: false,
           },
         },
-        uuid: id, // TOD: should we use a real uuid here?
+        uuid: id, // TODO: should we use a real uuid here?
         version: "vNext",
       },
     ],
